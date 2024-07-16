@@ -16,7 +16,7 @@ API RESTful para gerenciamento de usuários, desenvolvida com .NET 6, utilizando
 
 1. Clone o repositório:
     ```bash
-    git clone <URL_DO_REPOSITORIO>
+    git clone https://github.com/ricardosnatos1975/UserApi.git
     cd UserApi
     ```
 
