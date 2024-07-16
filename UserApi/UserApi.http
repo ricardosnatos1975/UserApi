@@ -1,0 +1,42 @@
+@UserApi_HostAddress = http://localhost:5294
+
+### Listar todos os usuários
+GET {{UserApi_HostAddress}}/api/users
+Accept: application/json
+
+###
+
+### Obter um usuário pelo ID
+GET {{UserApi_HostAddress}}/api/users/1
+Accept: application/json
+
+###
+
+### Criar um novo usuário
+POST {{UserApi_HostAddress}}/api/users
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "password": "password123"
+}
+
+###
+
+### Atualizar um usuário existente
+PUT {{UserApi_HostAddress}}/api/users/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "John Smith",
+  "email": "john.smith@example.com",
+  "password": "newpassword123"
+}
+
+###
+
+### Deletar um usuário
+DELETE {{UserApi_HostAddress}}/api/users/1
+Accept: application/json
